@@ -51,7 +51,7 @@ const uploadImage = (event) => {
             
     const url = URL.createObjectURL(fileInput.files[0]);
     uploadedImage.src = url;
-
+    console.log(url)
     displayContainer.appendChild(uploadedImage)
 
     generateButtons()
@@ -123,6 +123,7 @@ const resetText = () => {
 const resetImage = () => {
     displayContainer.innerHTML = ``
     downloadContainer.innerHTML = ``
+    fileInput.value = ``
 }
 
 imgForm.addEventListener('submit', addImage)
