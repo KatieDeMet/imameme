@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm A Meme</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Besley|Montserrat|Anton">
+    <!-- <script src="assets/js/lib/html2canvas.js"></script> -->
+</head>
+<body>
+    <header>
+        <h1 class="iamTheme">I'm A Meme</h1>
+    </header>
+    <section id="mainContent">
+        <div id="mainContainer">
+            <div id="welcomeContainer">
+            <p>Welcome to the <span class="iamTheme">I'm A Meme</span> web app that lets you turn your favorite pics into the next viral meme!</p>
+            <p>Simply upload your image, pick your desired text, and then download your unique meme!</p>
+            <p>Go ahead and give it a whirl!</p>
+            </div>
+            <div id="formContainer">
+            <h3 class="iamTheme">Choose Image</h3>
+            <form>
+                <input type="file" id="fileInput" name="fileInput">
+            </form>
+            <p id="or">OR</p>
+            <br>
+            <form id="imgUpload">
+                <label for="urlPic">Enter URL:</label>
+                <input type="text" id="urlPic" name="urlPic">
+                <input type="submit" id="imgSubmit" value="Submit">
+            </form>
+            <h3 class="iamTheme">Enter Text</h3>
+            <form id="textUpload">
+                <label for="upperText">Text at top:</label>
+                <input type="text" id="upperText" name="upperText">
+                <br><br>
+                <label for="lowerText">Text at bottom:</label>
+                <input type="text" id="lowerText" name="lowerText">
+                <br><br>
+                <input type="submit" id="textSubmit" value="Submit">
+            </form>
+            </div>
+        </div>
+        <section id="display">
+            <div id="displayContainer"></div>
+        </section>
+        <div id="downloadContainer"></div>
+    </section>
+    <footer></footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.js"></script>
+    <script type="module" href="." src="./index.js"></script>
+</body>
+</html>

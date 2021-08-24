@@ -1,0 +1,19 @@
+{
+  "name": "imameme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Katie DeMet",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "html2canvas": "^1.3.2",
+    "html2canvas-proxy": "^1.0.1"
+  }
+}
