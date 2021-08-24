@@ -9,7 +9,7 @@ const lowerText = document.querySelector('#lowerText')
 const upperP = document.createElement("p")
 const lowerP = document.createElement("p")
 
-const baseURL = "http://localhost:7777"
+const baseURL = ""
 let id = 0
 
 const addImage = event => {
@@ -94,6 +94,8 @@ const downloadImage = () => {
 const addText = event => {
     event.preventDefault()
 
+    if(displayContainer.innerHTML) {
+        
     let topText = upperText.value
     let bottomText = lowerText.value
 
@@ -110,6 +112,9 @@ const addText = event => {
 
     upperText.value = ""
     lowerText.value = ""
+    } else {
+        alert("Please select an image first.")
+    }
 }
 
 const resetText = () => {

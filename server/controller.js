@@ -1,4 +1,4 @@
-const imgArr = ["testing, testing"]
+const imgArr = []
 
 module.exports = {
     getImg: (req, res) => {
