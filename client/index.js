@@ -51,12 +51,10 @@ const uploadImage = (event) => {
             
     const url = URL.createObjectURL(fileInput.files[0]);
     uploadedImage.src = url;
-    // console.log(url);
 
     displayContainer.appendChild(uploadedImage)
 
     generateButtons()
-    // fileInput.value = ``
 }
 
 const generateButtons = () => {
