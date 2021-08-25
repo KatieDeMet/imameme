@@ -71,7 +71,7 @@ const generateButtons = () => {
     resetTextButton.addEventListener('click', resetText)
 
     const resetImgButton = document.createElement('button')
-    resetImgButton.innerText = "Clear Image"
+    resetImgButton.innerText = "Clear All"
     resetImgButton.classList.add("imageButtons")
     downloadContainer.appendChild(resetImgButton)
     resetImgButton.addEventListener('click', resetImage)
@@ -124,6 +124,8 @@ const resetImage = () => {
     displayContainer.innerHTML = ``
     downloadContainer.innerHTML = ``
     fileInput.value = ``
+    upperP.innerHTML = ""
+    lowerP.innerHTML = ""
 }
 
 imgForm.addEventListener('submit', addImage)
