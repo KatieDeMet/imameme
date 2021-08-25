@@ -32,7 +32,11 @@ One of the main alternative tools use to build out this project is __html2canvas
 ### Links
 
 [Check out the demo on YouTube](https://youtu.be/UPFSfziItqk)
+
+
 [Visit the live app](https://imameme.herokuapp.com/)
+
+
 [Contact the author on LinkedIn](https://www.linkedin.com/in/katie-demet-442b5b20b/)
 
 
