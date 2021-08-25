@@ -16,6 +16,7 @@ const addImage = event => {
     event.preventDefault()
     displayContainer.innerHTML = ``
     downloadContainer.innerHTML = ``
+
     let image = imgInput.value
 
     let bodyObj = {

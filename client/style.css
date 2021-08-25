@@ -151,7 +151,7 @@ input[type=file] {
     }
   }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
     #mainContent {
         flex-direction: column;
     }
@@ -164,6 +164,7 @@ input[type=file] {
     #display {
         width: 100vw;
         height: auto;
+        order: 2;
     }
     #downloadContainer {
         border-left: none;
@@ -172,5 +173,8 @@ input[type=file] {
         height: auto;
         flex-direction: row;
         justify-content: center;
+    }
+    #download {
+        order: 1;
     }
 }

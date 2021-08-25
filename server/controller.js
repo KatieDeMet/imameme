@@ -2,7 +2,7 @@ const imgArr = []
 
 module.exports = {
     getImg: (req, res) => {
-        res.stauts(200).send(imgArr)
+        res.status(200).send(imgArr)
     },
     addImg: (req, res) => {
         let { id, url } = req.body
